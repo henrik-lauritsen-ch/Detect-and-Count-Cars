@@ -6,4 +6,4 @@ Detecting and counting cars applying cv2 and yolov8n
 
 # Video
 
-<img src="https://github.com/henrik-lauritsen-ch/Pictures/blob/main/count-car-tool-recording.gif" width=60% height=60%>
+<img src="https://github.com/henrik-lauritsen-ch/Pictures/blob/main/count_cars.png" width=60% height=60%>
