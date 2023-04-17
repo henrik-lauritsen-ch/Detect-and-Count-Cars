@@ -94,13 +94,13 @@ while(True):
 
     # Update text on screen with aggregated #in/#out/net change
     cv2.putText(frame, f'Number of cars leaving: {len(counter)}', org=[350, 40], fontFace=cv2.FONT_HERSHEY_PLAIN,
-                fontScale=1.15, color=(255, 255, 255))
+                fontScale=1.45, color=(255, 255, 255))
 
-    cv2.putText(frame, f'Number of cars entering: {len(counter_in)}', org=[1070, 40], fontFace=cv2.FONT_HERSHEY_PLAIN,
-                fontScale=1.15, color=(255, 255, 255))
+    cv2.putText(frame, f'Number of cars entering: {len(counter_in)}', org=[1020, 40], fontFace=cv2.FONT_HERSHEY_PLAIN,
+                fontScale=1.45, color=(255, 255, 255))
 
     cv2.putText(frame, f'Net change: {len(counter_in) - len(counter)}', org=[1425, 40], fontFace=cv2.FONT_HERSHEY_PLAIN,
-                fontScale=1.15, color=(255, 255, 255))
+                fontScale=1.45, color=(255, 255, 255))
 
     cv2.imshow('frame', frame)  
 
