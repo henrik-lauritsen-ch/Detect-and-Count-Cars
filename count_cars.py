@@ -2,7 +2,7 @@
 # Following ideas of Tech Watt:
 # https://github.com/Tech-Watt/Python-codes/tree/main/vehicle%20detection%20and%20counting%20coures
 # 
-# Real Time Object Tracking With YOLOv8: Vehicle Tracking and Counting Course: Computer Vision Python
+# Real Time Object Tracking With YOLOv8
 #########################################################################################################
 
 
