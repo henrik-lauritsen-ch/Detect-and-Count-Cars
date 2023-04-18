@@ -39,8 +39,8 @@ while(True):
         continue
     
     # Lines for leaving and entering the city
-    cv2.line(frame,(line_out[0], line_out[1]), (line_out[2], line_out[3]), (245, 245, 245), 2)
-    cv2.line(frame,(line_in[0], line_in[1]), (line_in[2], line_in[3]), (245, 245, 245), 2)
+    # cv2.line(frame,(line_out[0], line_out[1]), (line_out[2], line_out[3]), (245, 245, 245), 2)
+    # cv2.line(frame,(line_in[0], line_in[1]), (line_in[2], line_in[3]), (245, 245, 245), 2)
    
     detections = np.empty((0, 5))
     result = model(frame, stream=1)
@@ -82,12 +82,12 @@ while(True):
         # Add number of cars leaving to 'counter' and number of cars entering to 'counter_in'. We 
         # apply center point of as measure if car entered or left city
         if (line_out[0] < cx < line_out[2]) and (line_out[1] -20 < cy < line_out[3] + 20):
-            cv2.line(frame,(line_out[0], line_out[1]), (line_out[2], line_out[3]), (51, 255, 51), 3)
+            # cv2.line(frame,(line_out[0], line_out[1]), (line_out[2], line_out[3]), (51, 255, 51), 3)
             if counter.count(id) == 0:
                 counter.append(id)
 
         if ((line_in[0] < cx < line_in[2]) and (line_in[1] - 20 < cy < line_in[3] + 20)):
-            cv2.line(frame,(line_in[0], line_in[1]), (line_in[2], line_in[3]), (51, 51, 255), 3)
+            # cv2.line(frame,(line_in[0], line_in[1]), (line_in[2], line_in[3]), (51, 51, 255), 3)
             if counter_in.count(id) == 0:
                 counter_in.append(id)
 
