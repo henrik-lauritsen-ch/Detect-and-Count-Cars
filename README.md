@@ -1,5 +1,5 @@
 # Detect-and-Count-Cars
-Detecting and counting cars applying cv2 and yolov8n
+Detecting and counting cars applying cv2 and ultralytics/yolov8n
 
 Code inspired by tutorial of Tech Watt:
 
