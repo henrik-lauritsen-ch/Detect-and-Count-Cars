@@ -4,7 +4,7 @@
 # 
 # Real Time Object Tracking With YOLOv8
 #########################################################################################################
-
+ 
 
 import cv2
 import numpy as np
