@@ -55,12 +55,12 @@ while(True):
     # Vitrual lines for leaving and entering the city    
     cv2.line(frame,(line_out_l[0], line_out_l[1]), (line_out_l[2], line_out_l[3]), (235, 235, 235), 2)
     cv2.line(frame,(line_out_r[0], line_out_r[1]), (line_out_r[2], line_out_r[3]), (235, 235, 235), 2)
-    cv2.line(frame,(line_in_l[0], line_in_l[1]), (line_in_l[2], line_in_l[3]), (240, 240, 240), 2)
-    cv2.line(frame,(line_in_r[0], line_in_r[1]), (line_in_r[2], line_in_r[3]), (240, 240, 240), 2)
+    cv2.line(frame,(line_in_l[0], line_in_l[1]), (line_in_l[2], line_in_l[3]), (235, 235, 235), 2)
+    cv2.line(frame,(line_in_r[0], line_in_r[1]), (line_in_r[2], line_in_r[3]), (235, 235, 235), 2)
     
     #  Green (out) and Red (in) circle next to result
-    cv2.circle(frame, center=(270, 32), radius=5, color=(153, 255, 153), thickness=-1 )
-    cv2.circle(frame, center=(990, 32), radius=5, color=(169, 169, 239), thickness=-1 )
+    cv2.circle(frame, center=(270, 32), radius=5, color=(153, 255, 153), thickness=-1)
+    cv2.circle(frame, center=(990, 32), radius=5, color=(169, 169, 239), thickness=-1)
     
     
     detections = np.empty((0, 5))
